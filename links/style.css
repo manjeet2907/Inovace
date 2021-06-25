@@ -75,9 +75,10 @@ nav #brandimg{
 
 /* styles for page navigation in normal screen */
 nav #pgnavigate{
-    flex-basis: 70%;
+    width:100%;
     justify-self: flex-end;
 }
+
 nav #pgnavigate ul{
     display: flex;
     list-style: none;

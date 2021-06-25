@@ -3,14 +3,28 @@
     require_once 'includes/header.php';
 ?>
 
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
-<h1>First Page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam libero quae mollitia, corporis, voluptates tenetur rem inventore dolorum asperiores similique ipsa numquam? Repellendus molestiae quidem facilis minus placeat id et quo quasi alias harum neque ipsa, soluta ipsam consequatur hic eveniet odio tempore explicabo atque. Doloremque esse perferendis maiores.</h1>
+
+<?php 
+    include_once 'includes/carousel.php';
+?>
+
+<?php 
+    include_once 'includes/updates.php';
+?>
+
+<?php 
+    include_once 'includes/whyus.php';
+?>
+
+<?php 
+    include_once 'includes/cta.php';
+?>
+
+<?php 
+    include_once 'includes/clients.php';
+?>
+
+
 
 <?php
     require_once 'includes/footer.php';

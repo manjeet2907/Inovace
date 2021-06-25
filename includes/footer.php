@@ -1,4 +1,4 @@
-<div id="links">
+<section id="links">
     <div id="quicklinkgrid">
         <ul class="footer-menu">
             <li><a href="index.php">Home</a></li>
@@ -22,7 +22,7 @@
 
         </ul>
     </div>
-</div>
+</section>
 
 <footer>
     <div class="footsec">
