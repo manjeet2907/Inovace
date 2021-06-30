@@ -4,7 +4,8 @@
 ?>
 
 <?php 
-    include_once 'includes/heroimage.php';
+    $src = "./images/h_clients.jpg";
+    include 'includes/heroimage.php';
 ?>
 
 <div id="clientele">

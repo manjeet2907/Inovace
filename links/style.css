@@ -28,6 +28,7 @@
     --content-padding-sm: 1rem;
 }
 
+
 /*main body style*/
 body{
     margin:0;
@@ -46,6 +47,7 @@ body{
 .text-right{
     text-align: right;
 }
+/* Template stylings */
 
 /*Header Section & Nav bar*/
 
@@ -194,12 +196,123 @@ nav #smnav{
     font-size: 8rem;
     }
 
-/* styles for page navigation in small screen */
+                    /*footer-section starts here*/
 
+/* links section */
+#links{
+    background:linear-gradient(var(--theme-color3) , var(--theme-color1)); 
+}
 
+#quicklinkgrid{
+    display:flex;
+    justify-content:space-between; 
+    width:var(--content-width);
+    margin:auto;
+}
 
-/* Home/index page starts here */
+#quicklinkgrid a{
+    font-size: var(--font-size-sm-heading);
+    margin-left:5rem;
+    color: var(--theme-color4);
+    text-decoration: none;
+}
+#quicklinkgrid a:hover , .footer-menu li:hover{
+    background-color: var(--theme-color1) ;
+    color: var(--theme-color4);
+}
+#quicklinkgrid a:visited{
+    color: var(--theme-color4);
+}
+.footer-menu{
+    flex-basis: 33.3%;
+    text-align: left;
+    color:var(--theme-color4);
+    border-right:var(--border-1-col1)
+}
+.footer-menu li{
+    list-style: none;
+    text-align: left;
+}
+.footer-menu:last-child{
+    border-right: none;
+}
 
+/* privacy statement */
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.1rem;
+    color: var(--theme-color4);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+#overlay {
+    position: fixed;
+    display: none;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 999;
+    cursor: pointer;
+}
+#overlay h2 {
+    font-size: 4rem;
+}
+/* to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    z-index: 1000;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: var(--theme-color4);
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: .4rem;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+/* footer section here */
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--theme-color1);
+    width:var(--full-width);
+    height: var(--content-height);
+    font-size: var(--font-size-p-);
+    color: var(--theme-color4);
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footsec{
+    margin:2rem;
+}
+footer img{
+    width : 10rem;
+    height:9rem;
+}
+
+footer p{
+    font-size: var(--font-size-p-);
+}
+footer p:hover{
+    cursor: pointer;
+}
+
+/* carousel stylings */
 /*Carousel*/
 
 #carousel{
@@ -298,8 +411,89 @@ nav #smnav{
     to {opacity: 1}
   }
 
+/* clients section styling */
+  
+#clientlist{
+    /* position:relative; */
+    /* z-index:6; */
+    margin:2rem;
+    /* width:95%; */
+    height:19rem;
+    background-color:white;
+    align-content:center;
+    text-align:center;
+    border-radius:2.5rem;
 
+}
+#clientlist h3{
+    font-size:2rem;
+    background-color: #272b67;
+    padding:0.8rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    color:white;
+}
+#clientlist img{
+    margin:0em 3rem 0 3rem;
+    /* padding:0px; */
+
+}
+#sidemotion{
+    padding:0;
+}
+/* cta section */
+#cta{
+    /* position: relative; */
+    /* z-index:5; */
+    /* margin:auto; */
+    /* display: flex; */
     
+    height:15rem;
+    background-color:white;
+    text-align:center;
+    border-radius:2.5rem;
+    margin:3rem;
+}
+#cta h3{
+    font-size:2rem;
+    background-color: #272b67;
+    padding:0.8rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    color:white;
+}
+#cta p{
+    font-size:1.5rem;
+    Padding:0.2rem;
+    margin:0.2rem 0.2rem 2rem .2rem;
+    text-align: center;
+}
+#ctabutton{
+    display:block;
+    top:5rem;
+    color:white;
+    font-size:0.8rem;
+    padding:1rem 2rem;
+    background-color: #272b67;
+    font-size:1.2rem;
+    text-decoration: none;
+    border-radius: 0 0 2.5rem 2.5rem;
+
+}
+#ctabutton:hover{
+    box-shadow: .2rem 0 #272b67;
+    font-size: 1.5rem;
+}
+
+/* hero image */
+#aboutusimage{
+    height: clac(2*var(--content-height));
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Home/index page starts here */
+
 
 /*Intro 3 section*/
 
@@ -440,87 +634,7 @@ nav #smnav{
     border-radius:25px; */
 /* } */
 
-#cta{
-    /* position: relative; */
-    /* z-index:5; */
-    /* margin:auto; */
-    /* display: flex; */
-    
-    height:15rem;
-    background-color:white;
-    text-align:center;
-    border-radius:2.5rem;
-    margin:3rem;
-}
-#cta h3{
-    font-size:2rem;
-    background-color: #272b67;
-    padding:0.8rem;
-    border-radius: 2.5rem 2.5rem 0 0;
-    color:white;
-}
-#cta p{
-    font-size:1.5rem;
-    Padding:0.2rem;
-    margin:0.2rem 0.2rem 2rem .2rem;
-    text-align: center;
-}
-#ctabutton{
-    display:block;
-    top:5rem;
-    color:white;
-    font-size:0.8rem;
-    padding:1rem 2rem;
-    background-color: #272b67;
-    font-size:1.2rem;
-    text-decoration: none;
-    border-radius: 0 0 2.5rem 2.5rem;
-
-}
-#ctabutton:hover{
-    box-shadow: .2rem 0 #272b67;
-    font-size: 1.5rem;
-}
-
-#clientlist{
-    /* position:relative; */
-    /* z-index:6; */
-    margin:2rem;
-    /* width:95%; */
-    height:19rem;
-    background-color:white;
-    align-content:center;
-    text-align:center;
-    border-radius:2.5rem;
-
-}
-#clientlist h3{
-    font-size:2rem;
-    background-color: #272b67;
-    padding:0.8rem;
-    border-radius: 2.5rem 2.5rem 0 0;
-    color:white;
-}
-#clientlist img{
-    margin:0em 3rem 0 3rem;
-    /* padding:0px; */
-
-}
-#sidemotion{
-    padding:0;
-}
-    
-/* Home page ends here */
-
 /* About US starts here */
-#aboutusimage{
-    background-image: url(images/gears-1236578.jpg);
-    height:30rem;
-    width:100%;
-    background-size:cover;
-    background-repeat: no-repeat;
-    
-}
 .eqsec2{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -882,121 +996,6 @@ nav #smnav{
     font-size: 1.5rem;
 }
 
-/*footer-section starts here*/
-
-/* links section */
-#links{
-    background:linear-gradient(var(--theme-color3) , var(--theme-color1)); 
-}
-
-#quicklinkgrid{
-    display:flex;
-    justify-content:space-between; 
-    width:var(--content-width);
-    margin:auto;
-}
-
-#quicklinkgrid a{
-    font-size: var(--font-size-sm-heading);
-    margin-left:5rem;
-    color: var(--theme-color4);
-    text-decoration: none;
-}
-#quicklinkgrid a:hover , .footer-menu li:hover{
-    background-color: var(--theme-color1) ;
-    color: var(--theme-color4);
-}
-#quicklinkgrid a:visited{
-    color: var(--theme-color4);
-}
-.footer-menu{
-    flex-basis: 33.3%;
-    text-align: left;
-    color:var(--theme-color4);
-    border-right:var(--border-1-col1)
-}
-.footer-menu li{
-    list-style: none;
-    text-align: left;
-}
-.footer-menu:last-child{
-    border-right: none;
-}
-
-/* privacy statement */
-
-#text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 1.1rem;
-    color: var(--theme-color4);
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-#overlay {
-    position: fixed;
-    display: none;
-    font-size: 1.5rem;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.9);
-    z-index: 999;
-    cursor: pointer;
-}
-#overlay h2 {
-    font-size: 4rem;
-}
-/* to top button */
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 2rem;
-    right: 3rem;
-    z-index: 1000;
-    font-size: 1.8rem;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: var(--theme-color4);
-    cursor: pointer;
-    padding: 1.5rem;
-    border-radius: .4rem;
-}
-
-#myBtn:hover {
-    background-color: #555;
-}
-/* footer section here */
-footer{
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: var(--theme-color1);
-    width:var(--full-width);
-    height: var(--content-height);
-    font-size: var(--font-size-p-);
-    color: var(--theme-color4);
-    justify-content: space-between;
-    align-items: center;
-}
-footer .footsec{
-    margin:2rem;
-}
-footer img{
-    width : 10rem;
-    height:9rem;
-}
-
-footer p{
-    font-size: var(--font-size-p-);
-}
-footer p:hover{
-    cursor: pointer;
-}
 
 
 /* styling for mobile */

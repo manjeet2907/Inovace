@@ -4,6 +4,7 @@
 ?>
 
 <?php 
+    $src = "./images/contactus.jpg";
     include_once 'includes/heroimage.php';
 ?>
 

@@ -1,10 +1,11 @@
 <?php 
-    $title ='Home';
+    $title ='About Us';
     require_once 'includes/header.php';
 ?>
 
 <?php 
-    include_once 'includes/heroimage.php';
+    $src = "images/gears.jpg";
+    require_once 'includes/heroimage.php';
 ?>
 
 <!--about us section starts here  -->

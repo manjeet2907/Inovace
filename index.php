@@ -3,7 +3,6 @@
     require_once 'includes/header.php';
 ?>
 
-
 <?php 
     include_once 'includes/carousel.php';
 ?>

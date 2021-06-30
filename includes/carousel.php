@@ -1,5 +1,5 @@
 <div id="carousel">
-        <div class="slide fade">
+    <div class="image-container" id="imgs">
             <div class="numbertext">1 / 3</div>
             <img class="resimg" src="images/inovace01.jpg" alt="#" width="100" height="auto">
             <div class="text">You’re either the one that creates the automation or you’re getting automated.</div>
